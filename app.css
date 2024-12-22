@@ -1,0 +1,110 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    justify-content: center;
+    padding: 2em;
+    /* min-width: fit-content; */
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+.panel > * {
+    padding: 0.8em 1em;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.pricing-img {
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+.pricing-header {
+    color: #888;
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.pricing-features {
+    margin: 3em 0 1.5em;
+    color: #016ff9
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding: 1em 0;
+    border-top:  1px solid #e1f1ff;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-price {
+    font-weight: 800;
+    color: #016ff9;
+    font-size: 1.5em;
+    display: block;
+}
+
+.pricing-button {
+    text-decoration: none;
+    border: 1px solid #9dd1ff;
+    border-radius: 0.5em;
+    display: inline-block;
+    padding: 0.4em 0.7em;
+    margin: 1.5em 0;
+    color: #348efe;
+    transition: background-color 150ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+
+@media (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 1.8em 3.6em;
+    }
+
+    .pricing-plan:last-of-type {
+        border-right: none;
+    }
+}
